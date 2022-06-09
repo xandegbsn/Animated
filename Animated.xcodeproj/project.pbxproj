@@ -13,6 +13,11 @@
 		ACFA60832852269A002D25A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFA607128522691002D25A3 /* ContentView.swift */; };
 		ACFA60842852269A002D25A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFA60722852269A002D25A3 /* Assets.xcassets */; };
 		ACFA60852852269A002D25A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFA60722852269A002D25A3 /* Assets.xcassets */; };
+		ACFA608F28522949002D25A3 /* RiveAssets in Resources */ = {isa = PBXBuildFile; fileRef = ACFA608E28522948002D25A3 /* RiveAssets */; };
+		ACFA609028522949002D25A3 /* RiveAssets in Resources */ = {isa = PBXBuildFile; fileRef = ACFA608E28522948002D25A3 /* RiveAssets */; };
+		ACFA609328522A05002D25A3 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = ACFA609228522A05002D25A3 /* RiveRuntime */; };
+		ACFA609528522A99002D25A3 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFA609428522A99002D25A3 /* OnboardingView.swift */; };
+		ACFA609628522A99002D25A3 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFA609428522A99002D25A3 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,8 @@
 		ACFA60772852269A002D25A3 /* Animated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animated.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFA607D2852269A002D25A3 /* Animated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animated.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFA607F2852269A002D25A3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		ACFA608E28522948002D25A3 /* RiveAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RiveAssets; sourceTree = "<group>"; };
+		ACFA609428522A99002D25A3 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFA609328522A05002D25A3 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +64,9 @@
 			children = (
 				ACFA607028522691002D25A3 /* AnimatedApp.swift */,
 				ACFA607128522691002D25A3 /* ContentView.swift */,
+				ACFA609428522A99002D25A3 /* OnboardingView.swift */,
 				ACFA60722852269A002D25A3 /* Assets.xcassets */,
+				ACFA608E28522948002D25A3 /* RiveAssets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -94,6 +104,9 @@
 			dependencies = (
 			);
 			name = "Animated (iOS)";
+			packageProductDependencies = (
+				ACFA609228522A05002D25A3 /* RiveRuntime */,
+			);
 			productName = "Animated (iOS)";
 			productReference = ACFA60772852269A002D25A3 /* Animated.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +155,9 @@
 				Base,
 			);
 			mainGroup = ACFA606A28522690002D25A3;
+			packageReferences = (
+				ACFA609128522A05002D25A3 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = ACFA60782852269A002D25A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACFA60842852269A002D25A3 /* Assets.xcassets in Resources */,
+				ACFA608F28522949002D25A3 /* RiveAssets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACFA60852852269A002D25A3 /* Assets.xcassets in Resources */,
+				ACFA609028522949002D25A3 /* RiveAssets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFA609528522A99002D25A3 /* OnboardingView.swift in Sources */,
 				ACFA60822852269A002D25A3 /* ContentView.swift in Sources */,
 				ACFA60802852269A002D25A3 /* AnimatedApp.swift in Sources */,
 			);
@@ -185,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFA609628522A99002D25A3 /* OnboardingView.swift in Sources */,
 				ACFA60832852269A002D25A3 /* ContentView.swift in Sources */,
 				ACFA60812852269A002D25A3 /* AnimatedApp.swift in Sources */,
 			);
@@ -452,6 +472,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACFA609128522A05002D25A3 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACFA609228522A05002D25A3 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACFA609128522A05002D25A3 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACFA606B28522690002D25A3 /* Project object */;
 }
